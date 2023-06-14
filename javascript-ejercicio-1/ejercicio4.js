@@ -166,4 +166,4 @@ function obtenerPersonas(arr) {
 
 }
 
-console.log(obtenerPersonas(personalEmpresa))
+console.table(obtenerPersonas(personalEmpresa))

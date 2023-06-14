@@ -19,12 +19,12 @@ function divisiblePorTres(arr) {
     arr.forEach(numero => {
         if(numero % 3 === 0 )
         {
-            values.push({value : numero }) 
-            values.push({divisible : true })
+            values.push({value : numero, divisible : true }) 
+            
         }
         else{
-            values.push({value : numero }) 
-            values.push({divisible : false })
+            values.push({value : numero, divisible : false }) 
+           
         }
     });
 
@@ -32,4 +32,4 @@ function divisiblePorTres(arr) {
   
   }
   
-  console.log(divisiblePorTres(numeros))
+  console.table(divisiblePorTres(numeros))
