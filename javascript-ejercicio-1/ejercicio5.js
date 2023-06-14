@@ -25,3 +25,19 @@ const alumnosCursoWeb = [
 //* La función se debe llamar obtenerAlumnos y debe recibir como parámetro ambos listados.
 
 //* AYUDA: Sería de utilidad usar el método de los arreglos llamado "includes", el cual retorna siempre un booleano. Investigar sobre el mismo.
+
+
+function obtenerAlumnos(arr, arr2) {
+
+  twocurses=[]
+  arr2.forEach(nombre => {
+    if (arr.includes(nombre.nombre)) {
+      twocurses.push(nombre);
+    }
+  });
+    
+  return twocurses
+
+}
+
+console.log(obtenerAlumnos(alumnosCursoIntroductorio, alumnosCursoWeb ))
